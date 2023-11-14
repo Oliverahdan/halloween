@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/cadastro', (req, res) => {
-  res.sendFile(__dirname + '/cadastro.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/login', (req, res) => {
