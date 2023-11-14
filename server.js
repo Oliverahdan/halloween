@@ -21,6 +21,10 @@ app.use(session({
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+  res.redirect('/cadastro');
+});
+
 app.get('/cadastro', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
