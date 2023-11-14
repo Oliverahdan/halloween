@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+    .background{
+        position: absolute;
+        height: 99%;
+        width: 99%;
+    }
+    #background{
+        position: absolute;
+        height: 99%;
+        width: 100%;
+    }
+
+    .prateleiras{
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        gap: 50px;
+    }
+
+    .mantimentos{
+        position: relative;
+        display: flex;
+        flex-flow: row;
+ 
+    }
+
+    #prateleira1{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-left: 30%;
+        height: 700px;
+        width: 500px;
+        margin-top: 60px;
+    }
+
+    #m1, #m2, #m3, #m4, #m5, #m6,  #m7,  #m8,  #m9,  #m10, #m12, #m15, #m16{
+        height: 90px;
+        width: 50px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    #m1{ 
+        top: 140px;
+        left: 700px ;
+
+    }
+
+    #m2{ 
+        top: 140px;
+        left: 700px ;
+    }
+
+    #m3{
+        top: 140px;
+        left: 700px ;
+    }
+
+    #m4{
+        top: 140px;
+        left: 510px ;
+    }
+
+    #m5{
+        top: 148px;
+        left: 359px ;
+    }
+
+    #m6{
+        top: 265px;
+        left: 320px ;
+    }
+
+   
+    #m7{
+        top: 265px;
+        left: 300px ;
+    }
+    #m8{
+        top: 265px;
+        left: 290px ;
+    }
+
+    #m9{
+        top: 265px;
+        left: 280px ;
+    }
+
+    #m10{
+        top: 525px;
+        left: 320px ;
+    }
+
+    #m11{
+        height: 90px;
+        width: 90px;
+        cursor: pointer;
+        position: relative;
+        top: 525px;
+        left: 50px ;
+    }
+
+    #m12{
+        top: 525px;
+        left: 230px ;
+    }
+
+    #m13{
+        height: 90px;
+        width: 100px;
+        cursor: pointer;
+        position: relative;
+        top: 535px;
+        left: 30px ;
+    }
+
+    #m14{
+        height: 90px;
+        width: 90px;
+        cursor: pointer;
+        position: relative;
+        top: 535px;
+        left: 30px ;
+    }
+
+    #zombie{
+        cursor: pointer;
+        position: relative;
+        top: 620px;
+        left: 780px ;
+        height: 90px;
+        width: 50px;
+    }
+
+    #frank{
+        cursor: pointer;
+        position: relative;
+        top: 335px;
+        left: 480px ;
+        height: 90px;
+        width: 50px;
+
+    }
+
+    #esp{
+        cursor: pointer;
+        position: relative;
+        top: 240px;
+        left: 720px ;
+        height: 90px;
+        width: 50px;
+
+    }
+    </style>
+
+    <script>
+        function zombie(){
+           const zumbi = document.getElementById('zombie');
+           
+        }
+    </script>
+</head>
+<body style="background-color: black">
+    <div class="background">
+        <img src="images/background.jpg" id="background">
+    </div>
+
+
+        <div class="prateleira1">
+            <img src="images/prateleira.png" id="prateleira1">
+        </div>
+
+        <div class="monstros">
+            <img src="images/zombie.PNG" id="zombie">
+            <img src="images/esp.PNG" id="esp">
+            <img src="images/frank.PNG" id="frank">
+        </div>
+
+    <div class="mantimentos">
+        <img src="images/m1.PNG" id="m1">
+        <img src="images/m2.PNG" id="m2">
+        <img src="images/m3.PNG" id="m3">
+        <img src="images/m4.PNG" id="m4">
+        <img src="images/m5.PNG" id="m5" onclick="zombie()">
+        <img src="images/m6.PNG" id="m6">
+        <img src="images/m7.PNG" id="m7" onclick="frank()">
+        <img src="images/m8.PNG" id="m8">
+        <img src="images/m9.PNG" id="m9">
+        <img src="images/m10.PNG" id="m10" onclick="esp()" >
+        <img src="images/m11.PNG" id="m11">
+        <img src="images/m12.PNG" id="m12">
+        <img src="images/m13.PNG" id="m13">
+        <img src="images/m14.PNG" id="m14">
+        <img src="images/m15.PNG" id="m15">
+        <img src="images/m16.PNG" id="m16">
+    </div>
+</body>
+</html>
